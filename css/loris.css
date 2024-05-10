@@ -309,9 +309,9 @@ form{
             padding: 10px;
             margin-bottom: 15px;
             box-sizing: border-box;
-            background-color:grey;
+            background-color:white;
             color: black;
-            border: 1px solid grey;
+            border: 1px solid white;
             border-radius: 5px; 
         }
 
