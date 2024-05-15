@@ -439,3 +439,7 @@ ul {
   color: #24262b;
   background-color: #ffffff;
 }
+
+p {
+ width: 100%;
+}
