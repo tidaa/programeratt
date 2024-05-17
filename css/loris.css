@@ -234,13 +234,6 @@ body{
 
 }
 
-.ul ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000000;
-}
 
 body{
   background-color: white;
@@ -252,34 +245,8 @@ body{
   box-sizing: border-box;
 }
 
-.ul ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000000;
-}
 
-.ul li{
-  float: right;
-}
 
-.ul li a{
-  display: block;
-  color: #D7BB4D;
-  text-align: centre;
-  padding: 18px 20px;
-  text-decoration: none;
-  margin: 0;
-}
-
-.ul ul li a:hover{
-  background-color: #D7BB4D;
-  color: #darkred;
-  text-decoration-color: darkred;
-  color: darkred;
-  text-shadow: 2px 2px 4px darkred;
-}
 
 img.harta{
   width: 1250px;
@@ -360,9 +327,6 @@ form{
   flex-wrap: wrap;
 }
 
-ul {
-  list-style: none;
-}
 
 
 @media(max-width: 767px){
