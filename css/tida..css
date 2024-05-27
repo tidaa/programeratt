@@ -333,7 +333,7 @@ i{
   left: 0;
   width: 0;
   height: 4px;
-  background: #021e55;
+  background: #fff;
   transition: var(--transition);
 }
 
@@ -461,7 +461,7 @@ margin-bottom: 100px;}
 
 
 .footer{
-    background-color: #111010;
+    background-color: #ededed;
     padding: 70px 0;
      font-family: "Quicksand", sans-serif;
      
@@ -472,7 +472,7 @@ margin-bottom: 100px;}
 }
 .footer1 h4{
     font-size: 18px;
-    color: #fff;
+    color: #05483A;
     margin-bottom: 35px;
     font-weight: 700;
     position: relative;
@@ -513,6 +513,7 @@ margin-bottom: 100px;}
     line-height: 40px;
     border-radius: 50%;
     transition: all 0.5s ease;
+    color: #fff;
 }
 
 .footer1 .social-links a:hover{
