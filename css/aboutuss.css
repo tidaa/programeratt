@@ -14,7 +14,7 @@ body{
 }
 
 .about-section{
-    background: url(1.jpg) no-repeat left;
+    background: url("../images/1.jpg") no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
@@ -48,7 +48,74 @@ body{
     font-weight: 700;
     font-size: 13px;
 }
+.footer{
+    background-color: #ededed;
+    padding: 70px 0;
+     font-family: "Quicksand", sans-serif;
+     
+}
+.footer1{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer1 h4{
+    font-size: 18px;
+    color: #05483A;
+    margin-bottom: 35px;
+    font-weight: 700;
+    position: relative;
+}
+.footer1 h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #FFD17D;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer1 ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer1 ul li {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: #5d737e;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer1 ul li a{
+  color:#5d737e;
+  font-weight: 555;
+}
+.footer1 ul li a:hover{
+    color: #8bb1b1;
+    padding-left: 8px;
+    transition: all 0.3s ease;
+}
+.footer1 .social-links a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #071a1d;
+    margin:0 10px 40px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    color: #fde6a8;
+}
 
+.footer1 .social-links a:hover{
+    color: #24262b;
+    background-color: #fde6a8;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
 @media screen and (max-width:1200px){
     .inner-container{
         padding: 80px;
