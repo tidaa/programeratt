@@ -322,7 +322,8 @@ button, a { transition: 0.25s ease; }
   gap: 5px;
 }
 i{
-  font-size:  50px;
+  font-size:  27px;
+  margin-top: 10px;
 }
 .service-card:is(:hover, :focus) .card-link { color: #021e55; }
 
@@ -482,7 +483,7 @@ margin-bottom: 100px;}
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color: #2A2A2A;
+    background-color: #FFD17D;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -494,31 +495,35 @@ margin-bottom: 100px;}
     font-size: 16px;
     text-decoration: none;
     font-weight: 300;
-    color: #bbb;
+    color: #5d737e;
     display: block;
     transition: all 0.3s ease;
 }
+.footer1 ul li a{
+  color:#5d737e;
+  font-weight: 555;
+}
 .footer1 ul li a:hover{
-    color: #fff;
+    color: #8bb1b1;
     padding-left: 8px;
     transition: all 0.3s ease;
 }
 .footer1 .social-links a{
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: #ffffff20;
-    margin:0 10px 10px 0;
+    height: 50px;
+    width: 50px;
+    background-color: #071a1d;
+    margin:0 10px 40px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
     transition: all 0.5s ease;
-    color: #fff;
+    color: #fde6a8;
 }
 
 .footer1 .social-links a:hover{
     color: #24262b;
-    background-color: #fff;
+    background-color: #fde6a8;
 }
 .row{
     display: flex;
