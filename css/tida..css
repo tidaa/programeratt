@@ -26,8 +26,6 @@ button {
 
 address { font-style: normal; }
 
-ion-icon { pointer-events: none; }
-
 html {
   font-family: var(--ff-nunito-sans);
   scroll-behavior: smooth;
@@ -147,13 +145,6 @@ button, a { transition: 0.25s ease; }
 
   --section-padding: 100px;
 
-  /**
-   * shadow
-   */
-
-  --shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
-  --shadow-2: 0 16px 32px hsla(188, 63%, 7%, 0.1);
-
 }
 
 
@@ -187,7 +178,7 @@ button, a { transition: 0.25s ease; }
 }
 
 .navbar {
-  background: #ffffff;
+  background: #f8f9fa; /* Light background color */
   position: fixed;
   top: 0;
   left: -310px;
@@ -201,13 +192,12 @@ button, a { transition: 0.25s ease; }
   transition: 0.15s ease-in;
 }
 
-
-.logo img{
-  height:50px;
+.logo img {
+  height: 50px;
 }
 
 .navbar-link {
-  color:#fff;
+  color: #333; /* Darker text color for better contrast */
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -215,7 +205,23 @@ button, a { transition: 0.25s ease; }
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: #05483A; }
+.navbar-link:focus {
+  color: #05483A;
+}
+
+/* Styles for the open state of the navbar */
+.navbar.open {
+  left: 0;
+  visibility: visible;
+}
+
+.nav-close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333; /* Close button color */
+}
 
 
 
@@ -247,7 +253,7 @@ button, a { transition: 0.25s ease; }
   margin-bottom: 20px;
 }
 
-.hero-subtitle ion-icon { color: #ff5a3d }
+
 
 .hero-subtitle span {
   color: #071a1d;
@@ -295,12 +301,6 @@ button, a { transition: 0.25s ease; }
   box-shadow: var(--shadow-2);
 }
 
-.service-card .card-icon {
-  width: max-content;
-  margin-inline: auto;
-  margin-bottom: 20px;
-}
-
 .service-card .card-title { margin-bottom: 15px; }
 
 .service-card .card-title > a:is(:hover, :focus) { color: #ff5a3d }
@@ -325,19 +325,6 @@ i{
   font-size:  27px;
   margin-top: 10px;
 }
-.service-card:is(:hover, :focus) .card-link { color: #021e55; }
-
-.service-card::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background: #fff;
-  transition: var(--transition);
-}
-
 .service-card:is(:hover, :focus)::after { width: 100%; }
 
 
@@ -380,32 +367,6 @@ margin-bottom: 100px;}
   z-index: 1;
 }
 
-.property-card .banner-actions {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  align-items: center;
-  gap: 15px 10px;
-  z-index: 1;
-}
-
-.banner-actions-btn {
-  color: #fff;
-  font-size: 1rem;
-  line-height: 1;
-  display: flex;
-  align-items: flex-end;
-  gap: 4px;
-}
-
-.banner-actions-btn ion-icon { font-size: 16px; }
-
-.banner-actions-btn:first-child { margin-right: auto; }
-
-.banner-actions-btn:hover { color: #ff9933; }
 
 .property-card .card-content {
   padding: 30px 15px 15px;
@@ -454,8 +415,6 @@ margin-bottom: 100px;}
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   margin-right: 20px;
 }
-
-
 
 .property-card .card-item span { margin-top: 5px; }
 
