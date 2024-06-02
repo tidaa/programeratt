@@ -1,6 +1,6 @@
 
 
-*, *::before, *::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,10 +24,8 @@ button {
   cursor: pointer;
 }
 
-address { font-style: normal; }
-
 html {
-  font-family: var(--ff-nunito-sans);
+  font-family: "Nunito Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -38,10 +36,6 @@ body {
 
 
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
-
 .container { padding-inline: 15px; }
 
 button, a { transition: 0.25s ease; }
@@ -50,7 +44,7 @@ button, a { transition: 0.25s ease; }
 .h2,
 .h3 {
   color: #1a2c23;
-  font-family: var(--ff-poppins);
+  font-family: "Poppins", sans-serif;
   line-height: 1.3;
 }
 
@@ -63,7 +57,7 @@ button, a { transition: 0.25s ease; }
 
 .h3 {
   font-size: 20px;
-  font-weight: var(--font-weight, 700);
+  font-weight: 700;
 }
 
 .h3 > a { color: inherit; }
@@ -121,31 +115,6 @@ button, a { transition: 0.25s ease; }
 }
 
 
-:root {
-
-  /**
-   * typography
-   */
-
-  --ff-nunito-sans: "Nunito Sans", sans-serif;
-  --ff-poppins: "Poppins", sans-serif;
-
-
-
-
-  /**
-   * transition
-   */
-
-  --transition: 0.25s ease;
-
-  /**
-   * spacing
-   */
-
-  --section-padding: 100px;
-
-}
 
 
 .has-scrollbar {
@@ -164,13 +133,6 @@ button, a { transition: 0.25s ease; }
 
 
 
-
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
 
 .header {
   position: relative;
@@ -197,7 +159,7 @@ button, a { transition: 0.25s ease; }
 }
 
 .navbar-link {
-  color: #333; /* Darker text color for better contrast */
+  color: #333; 
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -209,7 +171,7 @@ button, a { transition: 0.25s ease; }
   color: #05483A;
 }
 
-/* Styles for the open state of the navbar */
+
 .navbar.open {
   left: 0;
   visibility: visible;
@@ -220,27 +182,15 @@ button, a { transition: 0.25s ease; }
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #333; /* Close button color */
+  color: #333;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero {
   background: #ededed;
-  padding-block: var(--section-padding);
+  padding-block: 100px;
 }
 
 .hero-content { margin-bottom: 60px; }
@@ -255,11 +205,6 @@ button, a { transition: 0.25s ease; }
 
 
 
-.hero-subtitle span {
-  color: #071a1d;
-  font-size: var(--fs-5);
-  font-weight: var(--fw-700);
-}
 
 .hero-title { margin-bottom: 20px; }
 
@@ -275,14 +220,9 @@ button, a { transition: 0.25s ease; }
 
 
 
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
-
 .service {
   background-image: url("../images/1.0.jpeg");
-  padding-block: var(--section-padding);
+  padding-block: 100px;
   opacity: 1.5;
 }
 
@@ -298,24 +238,15 @@ button, a { transition: 0.25s ease; }
   background: #ffffff;
   text-align: center;
   padding: 40px 30px;
-  box-shadow: var(--shadow-2);
 }
 
 .service-card .card-title { margin-bottom: 15px; }
 
 .service-card .card-title > a:is(:hover, :focus) { color: #ff5a3d }
 
-.service-card .card-text {
-  color: #5d737e;
-  font-size: var(--fs-5);
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
 
 .service-card .card-link {
   color: #8bb1b1;
-  font-size: var(--fs-5);
-  font-weight: var(--fw-600);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,10 +259,6 @@ i{
 .service-card:is(:hover, :focus)::after { width: 100%; }
 
 
-
-/*-----------------------------------*\
-  #PROPERTY
-\*-----------------------------------*/
 
 .property { padding-block: #f2f2f2; 
 margin-top: 100px;
@@ -390,12 +317,6 @@ margin-bottom: 100px;}
 }
 
 
-.property-card .card-text {
-  color: #fde6a8;
-  font-size: 0.875rem;
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
 
 .property-card .card-list {
   display: flex;
@@ -490,37 +411,8 @@ margin-bottom: 100px;}
 }
 
 
-
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 600px screen
- */
-
 @media (min-width: 600px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-
-    /**
-     * typography
-     */
-
-    --fs-2: 1.875rem;
-
-  }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 550px;
@@ -537,18 +429,7 @@ margin-bottom: 100px;}
   .has-scrollbar > li { min-width: calc(50% - 12.5px); }
 
 
-
-  /**
-   * SERVICE
-   */
-
   .service-list > li { width: calc(50% - 15px); }
-
-
-
-  /**
-   * PROPERTY
-   */
 
   .property .container {
     max-width: unset;
@@ -557,53 +438,9 @@ margin-bottom: 100px;}
 
 
 
-  /**
-   * CTA
-   */
-
-  .cta-card { --fs-2: 1.5rem; }
-
-
-
-  /**
-   * FOOTER
-   */
-
-
-
-}
-
-
-
-
-
-/**
- * responsive for larger than 768px screen
- */
 
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-
-    /**
-     * typography
-     */
-
-    --fs-1: 2.5rem;
-    --fs-5: 0.938rem;
-    --fs-6: 0.875rem;
-
-  }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 720px; }
 
@@ -653,52 +490,6 @@ margin-bottom: 100px;}
   }
 
 
-
-  /**
-   * HERO
-   */
-
-  .hero-content { max-width: 400px; }
-
-
-  /**
-   * FOOTER
-   */
-
-
-
-}
-
-
-
-
-
-/**
- * responsive for larger than 992px screen
- */
-
-@media (min-width: 992px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-
-    /**
-     * typography
-     */
-
-    --fs-1: 3.125rem;
-    --fs-4: 1.375rem;
-
-  }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 970px; }
 
@@ -764,48 +555,13 @@ margin-bottom: 100px;}
 
 
 
-
-
-
-
-
-
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-
-    /**
-     * typography
-     */
-
-    --fs-2: 2.75rem;
-    --fs-4: 1.5rem;
-
-  }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 1200px; }
 
   .has-scrollbar > li { min-width: calc(33.33% - 16.66px); }
 
-
-
-  /**
-   * HEADER
-   */
 
   .header-bottom { padding-block: 30px; }
 
@@ -846,30 +602,13 @@ margin-bottom: 100px;}
     animation: slideDown 0.25s ease-out forwards;
   }
 
-  @keyframes slideDown {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(100%); }
-  }
 
-
-
-  /**
-   * HERO
-   */
 
   .hero-text {
     padding-left: 30px;
     max-width: 450px;
     margin-bottom: 40px;
   }
-
-
-
-
-  /**
-   * FOOTER
-   */
-
 
 
 }
