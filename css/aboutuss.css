@@ -65,6 +65,10 @@ body{
     font-weight: 700;
     position: relative;
 }
+i{
+    font-size:  27px;
+    margin-top: 10px;
+  }
 .footer1 h4::before{
     content: '';
     position: absolute;

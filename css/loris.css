@@ -285,7 +285,10 @@ form{
   color: #24262b;
   background-color: #ffffff;
 }
-
+i{
+  font-size:  27px;
+  margin-top: 10px;
+}
 body {
   background-color: #ededed;
 }
