@@ -14,7 +14,7 @@ a,
 img,
 span,
 button,
-ion-icon { display: block; }
+ { display: block; }
 
 button {
   border: none;
@@ -611,5 +611,5 @@ margin-bottom: 100px;}
   }
 
 
-}
+
 
