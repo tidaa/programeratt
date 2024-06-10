@@ -76,7 +76,7 @@ button, a { transition: 0.25s ease; }
 .btn:hover,
 .btn:focus {
   background: #000000;
-  color: #05463A;
+  color: #fff;
   border-color: #000000;
 }
 
