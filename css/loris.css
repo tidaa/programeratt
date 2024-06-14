@@ -795,7 +795,6 @@ select{
   background-position-y: 20px;
 }
 
-
 .footer{
     background-color: #ededed;
     padding: 70px 0;
@@ -860,3 +859,8 @@ select{
     color: #24262b;
     background-color: #fde6a8;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
