@@ -224,6 +224,7 @@ button, a { transition: 0.25s ease; }
   background-image: url("../images/1.0.jpeg");
   padding-block: 100px;
   opacity: 1.5;
+  
 }
 
 .service-list {
@@ -356,11 +357,12 @@ height: 80vh;
 }
 
 .wrapper{
-  
+  max-height: 700px;
   max-width:auto;
   position: relative;
   background-color:#fff;
   margin-bottom: 150px;
+  filter: brightness(0.7);
 }
 
 .wrapper i{
